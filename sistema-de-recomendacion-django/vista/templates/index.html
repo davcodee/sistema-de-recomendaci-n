@@ -5,111 +5,27 @@
 
 
 <body>
+  <h1>Se escogió de manera aleatoria el siguiente cuadro:</h1>
 
-<div class="container">
-    <div class=" container text-center" style=" margin-top:70px; ">
-     <div class="row " >
-    <div class="col-sm-3">
-      <div class="card" style="width: 15rem; ">
-        <a href="#" class="btn btn-default">
-           
-          <img src="https://www.nationalgeographic.com.es/medio/2019/04/10/04-gioconda-mona-lisa-leonardo-da-vinci_45541385_1500x1982.jpg" 
-          class="card-img-top" style=" width:100px; height:100px ">
-          <div class="card-body">
-            <h5 class="card-title " > Corriente 1 </h5>
-          </div>
-        </a>
-      </div>
-    </div>
-  <div class="col-sm-3">
-    <div class="card" style="width: 15rem;">
-      <a href="#" class="btn btn-default">
-        
-        <img src="https://www.nationalgeographic.com.es/medio/2019/04/10/04-gioconda-mona-lisa-leonardo-da-vinci_45541385_1500x1982.jpg" 
-        class="card-img-top" style=" width:100px; height:100px ">
-        <div class="card-body">
-          <h5 class="card-title "> Corriente 2 </h5>
-        </div>
-      </a>
-    </div>
-  </div>
-  <div class="col-sm-3">
-    <div class="card" style="width: 15rem;">
-      <a href="#" class="btn btn-default">
-          
-        <img src="https://www.nationalgeographic.com.es/medio/2019/04/10/04-gioconda-mona-lisa-leonardo-da-vinci_45541385_1500x1982.jpg" 
-        class="card-img-top" style=" width:100px; height:100px ">
-        <div class="card-body">
-          <h5 class="card-title "> Corriente 3</h5>
-        </div>
-      </a>
-    </div>
-  </div>
-  <div class="col-sm-3">
-    <div class="card" style="width: 15rem;">
-      <a href="#" class="btn btn-default">
-         
-        <img src="https://www.nationalgeographic.com.es/medio/2019/04/10/04-gioconda-mona-lisa-leonardo-da-vinci_45541385_1500x1982.jpg" 
-        class="card-img-top" style=" width:100px; height:100px ">
-        <div class="card-body">
-          <h5 class="card-title "> Corriente 4</h5>
-        </div>
-      </a>
-    </div>
-  </div>
-</div>
+  {% block content%}
+  {% for autor in autores %}
+    <ul>
+      <li> {{autor}}</li>
+    </ul>
+  {% endfor %}
+  <h1>Se te recomiendan los siguientes cuadros</h1>
+    {% for r in recomendaciones %}
+    <ul>
+      <li> {{r}}</li>
+    </ul>
+  {% endfor %}
+
+  {% endblock %}
 
 
-<div class="row" style="margin-top:30px; margin-bottom:70px;">
-    <div class="col-md-3">
-      <div class="card" style="width: 15rem;">
-        <a href="#" class="btn btn-default">
-            
-          <img src="https://www.nationalgeographic.com.es/medio/2019/04/10/04-gioconda-mona-lisa-leonardo-da-vinci_45541385_1500x1982.jpg" 
-          class="card-img-top" style=" width:100px; height:100px ">
-          <div class="card-body">
-            <h5 class="card-title "> Corriente 5 </h5>
-          </div>
-        </a>
-      </div>
-    </div>
-    <div class="col-md-3">
-      <div class="card" style="width: 15rem;">
-        <a href="#" class="btn btn-default">
-            
-          <img src="https://www.nationalgeographic.com.es/medio/2019/04/10/04-gioconda-mona-lisa-leonardo-da-vinci_45541385_1500x1982.jpg" 
-          class="card-img-top" style=" width:100px; height:100px ">
-          <div class="card-body">
-            <h5 class="card-title "> Corriente 6 </h5>
-          </div>
-        </a>
-      </div>
-    </div>
-    <div class="col-md-3">
-      <div class="card" style="width: 15rem;">
-        <a href="#" class="btn btn-default">
-           
-          <img src="https://www.nationalgeographic.com.es/medio/2019/04/10/04-gioconda-mona-lisa-leonardo-da-vinci_45541385_1500x1982.jpg" 
-          class="card-img-top " style=" width:100px; height:100px ">
-          <div class="card-body">
-            <h5 class="card-title "> Corriente 7 </h5>
-          </div>
-        </a>
-      </div>
-    </div>
-    <div class="col-md-3">
-      <div class="card" style="width: 15rem;">
-        <a href="#" class="btn btn-default">
-        
-          <img src=" https://www.nationalgeographic.com.es/medio/2019/04/10/04-gioconda-mona-lisa-leonardo-da-vinci_45541385_1500x1982.jpg" 
-          class="card-img-top" style=" width:100px; height:100px ">
-          <div class="card-body">
-            <h5 class="card-title "> corriete 8</h5>
-          </div>
-        </a>
-      </div>
-    </div>
-</div>
-</div>
-</div>
+
+
+
+
+
 </body>
